@@ -32,8 +32,8 @@ describe "SYTW P2 - page" do
 
 
     it "Debe cargar la imagen del pajarito" do
-		get '/'
-		assert_match '<img src="/bird_icon.png" WIDTH=100 HEIGHT=100 />', last_response.body
+	get '/'
+	assert_match '<img src="/bird_icon.png" WIDTH=100 HEIGHT=100 />', last_response.body
     end
 
     it "should return foot" do
