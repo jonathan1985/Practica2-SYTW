@@ -30,6 +30,7 @@ describe "SYTW P2 - page" do
         assert_match "<p ><b>¿Cuántos seguidores desea ver? </b></p>", last_response.body
     end
 
+
     it "Debe cargar la imagen del pajarito" do
 		get '/'
 		assert_match '<img src="/bird_icon.png" WIDTH=100 HEIGHT=100 />', last_response.body
