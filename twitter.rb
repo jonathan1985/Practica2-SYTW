@@ -2,9 +2,7 @@
 require 'twitter'
 require 'sinatra'
 
-
-
-class MyApp
+class Twitterpopular
   
   require './configure'
   
@@ -20,8 +18,6 @@ class MyApp
   
 end
 
-
-
 get '/' do
   @seguidores = []
   @name = ''
@@ -35,7 +31,7 @@ post '/' do
   @name = params[:firstname] || ''
   @number = params[:n].to_i
   @number = 10 if @number > 10
-  tw = MyApp.new
+  tw = Twitterpopular.new
   
 	if (tw.dusuario(client, @name) == true)
 	  amigos = tw.damigos(client, @name)
