@@ -1,0 +1,91 @@
+  			p{ 
+				color: black; 
+			 	font-family: Verdana;
+			}
+			
+			body {
+  				  background-color: #09C;
+				}
+
+
+  			#cabecera{
+				background-color: black;
+				height: 7em;
+				width: 100%;
+			  	margin: 0;
+			  	padding: 0;
+			}
+
+			#cabecera p{
+				color: white;
+				text-align: center;
+				font-size: 2em;
+				line-height: 3.5em;
+			}
+
+			#re{
+				padding: 2em 2em 2em 2em;
+				background-color: #999;
+				font-family: Arial;
+				margin-top: 4em;
+				margin-left: 6em;
+				margin-bottom: 4em;
+				border: 3px solid gray;
+				width: 25em;
+				float: left;
+				font-size: 1em;
+			}
+			#izquierda{
+				width: 30em; 
+				background-color: #999;
+				text-align: center;
+				font-family:Arial;
+				color:black;
+				font-size: 1em;
+				padding: 2em 2em 2em 2em;
+				border: 3px solid gray;
+				float: right;
+				margin-top: 4em;
+				margin-right: 6em; 
+				margin-bottom: 4em;
+			}
+
+			#warning{
+				background-color: #F90;
+				font-size: 1.5em;
+				color: red;
+				padding-left: 2em;
+				padding-right: 2em;
+				padding-top: 0.9em;
+				padding-bottom: 0.9em;
+
+			}
+
+			#col{
+				background-color: #E8E8E8 ;
+				text-align: left;
+				margin-bottom: 1em;
+			}	
+			
+			#footer{
+				background-color: black;
+				height: 7em;
+				width: 100%;
+			  	margin: 0;
+			  	padding: 0;
+			  	font-size: 1em;
+			  	float: left;
+			}
+
+			#footer h1{
+				color: white;
+				text-align: center;
+				font-size: 1em;
+				line-height: 1em;
+			}
+				#footer p{
+				color: white;
+				text-align: left;
+				font-size: 1em;
+				line-height: 1em;
+			}

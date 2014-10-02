@@ -6,28 +6,51 @@ require_relative '../twitter.rb'
 
 
 include Rack::Test::Methods
-	
-	def app
-		Sinatra::Application
-	end
-	
-describe "SYTW P2" do
-  
-  #Definir objeto para las pruebas
 
-  it "Should return index" do
-	get '/'
-	assert last_response.ok?
-  end  
-  
-#   it "Comprobar titulo" do
-# 	get '/'
-# 	assert_match "<title>SYTW - P2</title>", last_response.body
-#   end
-  
-#   it "should return user's number of friends" do
-# 	
-#   end
-  
+def app
+    Sinatra::Application
 end
 
+describe "SYTW P2 - page" do
+    
+    
+    it "Should return index" do
+        get '/'
+        assert last_response.ok?
+    end
+    
+    it "should return title" do
+        get '/'
+        assert_match "<title> Amigos más populares en Twitter </title>", last_response.body
+    end
+    
+    it "should return foot" do
+       get '/'
+       assert_match "<p><b>SYTW - Práctica 2 Realizada por:</b> <h1>-> Daniel Nicolás Fernández del Castillo Salazar</h1> <h1>-> Jonathan Barrera Delgado</h1></p>", last_response.body
+     end
+    
+    it "should return form" do
+        get '/'
+        assert_match "<p ><b>Introduzca su nombre en Twitter: </b></p>", last_response.body
+        assert_match "<p ><b>¿Cuántos seguidores desea ver? </b></p>", last_response.body
+    end
+    
+    
+end
+
+describe "SYTW P2 - Funtions" do
+    before :all do
+        @tw = MyApp.new
+        @client = my_twitter_client()
+        @name1 = "b0nedark"
+        @name2 = "bonedark"
+    end
+    
+    it "the user exist" do
+        assert @tw.dusuario(@client,@name1)
+    end
+    
+    it "the user not exist" do
+        refute @tw.dusuario(@client, @name2)
+    end
+end
