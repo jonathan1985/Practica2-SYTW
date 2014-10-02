@@ -2,8 +2,6 @@
 require 'twitter'
 require 'sinatra'
 
-
-
 class MyApp
   
   require './configure'
@@ -19,8 +17,6 @@ class MyApp
   end
   
 end
-
-
 
 get '/' do
   @seguidores = []
