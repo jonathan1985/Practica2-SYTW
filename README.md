@@ -8,7 +8,7 @@ Esta aplicación es una web basada en Sinatra que obtien un nombre de usuario de
 
 ### Instalación
 --------------
-Practica 2
+Practica 2 Test
 
 1. Instalamos las gemas necesarias con: `bundle install`
 2. Configuramos el fichero `configure.rb` siguiendo la plantilla ejemplo del fichero `configure.rb.example`
