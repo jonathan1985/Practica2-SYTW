@@ -40,7 +40,7 @@ end
 
 describe "SYTW P2 - Funtions" do
     before :all do
-        @tw = MyApp.new
+        @tw = Twitterpopular.new
         @client = my_twitter_client()
         @name1 = "b0nedark"
         @name2 = "bosdadanedark"
