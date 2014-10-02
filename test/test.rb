@@ -29,7 +29,12 @@ describe "SYTW P2 - page" do
         assert_match "<p ><b>Introduzca su nombre en Twitter: </b></p>", last_response.body
         assert_match "<p ><b>¿Cuántos seguidores desea ver? </b></p>", last_response.body
     end
-    
+
+    it "Debe cargar la imagen del pajarito" do
+		get '/'
+		assert_match '<img src="/bird_icon.png" WIDTH=100 HEIGHT=100 />', last_response.body
+    end
+
     it "should return foot" do
         get '/'
         assert_match "<p><b>SYTW - Práctica 2 Realizada por:</b><h1>-> Daniel Nicolás Fernández del Castillo Salazar</h1><h1>-> Jonathan Barrera Delgado</h1></p>", last_response.body
