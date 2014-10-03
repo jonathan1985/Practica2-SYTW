@@ -1,5 +1,5 @@
 # Sistemas y Tecnologías Web:
-## Práctica2: Despliegue en Heroku - Testing - Travis
+## Práctica2: Despliegue en Heroku - Testing
 
 =========
 
